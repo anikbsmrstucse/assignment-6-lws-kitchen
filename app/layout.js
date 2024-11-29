@@ -21,12 +21,12 @@ const menuItems = [
     {
         id: "latest-recipes",
         label: "Latest Recipes",
-        link: "/latest-recipes",
+        link: "#latest-recipes",
     },
     {
         id: "handpicked",
         label: "Handpicked",
-        link: "/handpicked",
+        link: "#handpicked",
     },
 ];
 
