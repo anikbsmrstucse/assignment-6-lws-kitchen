@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body className={`font-inter antialiased `}>
                 <Header menuItems={menuItems} />
-                <main class="max-w-screen-xl mx-auto px-4 mt-[100px]">
+                <main className="max-w-screen-xl mx-auto px-4 mt-[100px]">
                     {children}
                 </main>
                 <Footer />
