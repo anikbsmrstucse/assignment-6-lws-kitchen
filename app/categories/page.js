@@ -1,5 +1,9 @@
+import AllCategory from "@/components/category/AllCategory";
+import { getPopularCategories } from "@/lib/category-lib";
+
 const CategoriesPage = () => {
-    return <div>All Categories page</div>;
+    const allCategories = getPopularCategories();
+    return <AllCategory allCategories={allCategories}/>;
 };
 
 export default CategoriesPage;
