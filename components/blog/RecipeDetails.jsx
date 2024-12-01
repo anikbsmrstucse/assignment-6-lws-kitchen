@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function RecipeDetails({ recipe }) {
-    const { title, author, cooking_time, published_date, description, thumbnail} = recipe;
+    const { title, author, cooking_time, published_date, description, thumbnail } = recipe;
 
     return (
         <article>
@@ -33,7 +33,9 @@ export default function RecipeDetails({ recipe }) {
                     </button>
                 </div>
             </div>
-            <Image src={`/assets/thumbs/${thumbnail}`} alt="recipe-img" lazyBoundary="Loading.." className="w-full h-[500px] mb-8 rounded-lg" layout="responsive" width={1000} height={0} />
+            <Image src={`/assets/thumbs/${thumbnail}`} alt="recipe-img" className="w-full h-[500px] mb-8 rounded-lg" layout="responsive" width={500} height={0} placeholder="blur"
+                blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iMzAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIvPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiNlZWUiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjY2NjIiBvZmZzZXQ9IjUwJSIvPjxzdG9wIHN0b3AtY29sb3I9IiNlZWUiIG9mZnNldD0iMTAwJSIvPjwvbGluZWFyR3JhZGllbnQ+PC9zdmc+"
+                />
             <p
                 className="text-gray-600 mb-8"
                 dangerouslySetInnerHTML={{ __html: description }}

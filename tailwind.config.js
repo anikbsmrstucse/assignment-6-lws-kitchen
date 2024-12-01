@@ -11,8 +11,9 @@ module.exports = {
                 center: true,
             },
             colors: {
-                background: "var(--background)",
-                foreground: "var(--foreground)",
+                primary: '#3490dc',
+                secondary: '#ffed4a',
+                accent: '#f6993f',
             },
             fontFamily: {
                 inter: ["Inter", "sans-serif"],

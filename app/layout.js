@@ -1,6 +1,7 @@
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import "./globals.css";
+import { Suspense } from "react";
 
 export const metadata = {
     title: "LWS Kitchen - Food Blog and Recipes",

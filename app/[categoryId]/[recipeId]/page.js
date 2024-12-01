@@ -1,13 +1,17 @@
 import RecipeDetails from "@/components/blog/RecipeDetails";
-import { getRecipeByTitle } from "@/lib/recipes-lib";
+import RecipeLikeSection from "@/components/blog/RecipeLikeSection";
+import { getAllRecipeByCategoryId, getRecipeByTitle } from "@/lib/recipes-lib";
 
-export default function SingleRecipePage({params:{recipeId}}) {
-    console.log(recipeId)
+export default function SingleRecipePage({ params: { recipeId } }) {
     const recipe = getRecipeByTitle(recipeId)
-    console.log({recipe})
+    const categoryWiseRecipes = getAllRecipeByCategoryId(recipe.category_id).sort(
+        (a, b) => b.rating.rating_count - a.rating.rating_count
+    ).slice(0, 4);
+
     return (
-        <main class="px-4 py-8">
-            <RecipeDetails recipe={recipe}/>
+        <main className="px-4 py-8">
+            <RecipeDetails recipe={recipe} />
+            <RecipeLikeSection categoryWiseRecipes={categoryWiseRecipes}/>
         </main>
     )
 }
