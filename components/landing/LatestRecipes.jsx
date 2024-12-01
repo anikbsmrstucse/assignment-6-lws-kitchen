@@ -15,7 +15,7 @@ const LatestRecipes = ({ latestRecipes }) => {
                                 src={`/assets/thumbs/${recipe.thumbnail}`}
                                 alt="Strawberry Cream"
                                 className="w-full h-[300px] object-cover rounded-lg mb-4"
-                                width={100}
+                                width={500}
                                 height={300}
                             />
                             <Link href={`/${recipe.category_id}/${recipe.id}`}>

@@ -11,7 +11,7 @@ const Hero = ({ heroRecipe }) => {
                         src={`/assets/thumbs/${thumbnail}`}
                         alt="Mighty Super Cheesecake"
                         className="w-full h-[450px] object-cover rounded-lg"
-                        width={100}
+                        width={500}
                         height={450}
                     />
                 </div>

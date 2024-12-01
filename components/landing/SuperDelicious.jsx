@@ -19,7 +19,7 @@ const SuperDelicious = ({ superDeliciousRecipe }) => {
                                 src={`/assets/thumbs/${deliciousRecipe.thumbnail}`}
                                 alt={deliciousRecipe.id}
                                 className="w-full h-[300px] object-cover rounded-lg mb-4"
-                                width={100}
+                                width={500}
                                 height={300}
                             />
                             <h3 className="text-xl font-semibold mb-2 font-playfair">

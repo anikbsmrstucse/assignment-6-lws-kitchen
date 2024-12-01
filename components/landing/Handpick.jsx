@@ -20,7 +20,7 @@ const Handpick = ({ handPickRecipe, initialValue = 0, endingValue = 2 }) => {
                                     src={`/assets/thumbs/${recipe.thumbnail}`}
                                     alt="Sushi Combos"
                                     className="w-full h-[400px] rounded-lg object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110"
-                                    width={100}
+                                    width={500}
                                     height={400}
                                 />
                             </Link>

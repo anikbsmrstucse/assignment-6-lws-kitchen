@@ -33,9 +33,16 @@ export default function RecipeDetails({ recipe }) {
                     </button>
                 </div>
             </div>
-            <Image src={`/assets/thumbs/${thumbnail}`} alt="recipe-img" className="w-full h-[500px] mb-8 rounded-lg" layout="responsive" width={500} height={0} placeholder="blur"
+            <Image 
+                src={`/assets/thumbs/${thumbnail}`} 
+                alt="recipe-img" 
+                className="w-full h-[500px] mb-8 rounded-lg" 
+                layout="responsive" 
+                width={500} 
+                height={0} 
+                placeholder="blur"
                 blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iMzAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIvPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiNlZWUiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjY2NjIiBvZmZzZXQ9IjUwJSIvPjxzdG9wIHN0b3AtY29sb3I9IiNlZWUiIG9mZnNldD0iMTAwJSIvPjwvbGluZWFyR3JhZGllbnQ+PC9zdmc+"
-                />
+            />
             <p
                 className="text-gray-600 mb-8"
                 dangerouslySetInnerHTML={{ __html: description }}
@@ -50,16 +57,16 @@ export default function RecipeDetails({ recipe }) {
 
             <h2 className="text-3xl font-bold mb-4 font-playfair">Here are the basics</h2>
             <p className="mb-8">
-                Juicy meatballs brisket slammin' baked shoulder. Juicy smoker soy sauce burgers brisket. polenta mustard hunk
+                Juicy meatballs brisket slammin&apos; baked shoulder. Juicy smoker soy sauce burgers brisket. polenta mustard hunk
                 greens. Wine technique snack skewers chuck excess. Oil heat slowly. slices natural delicious, set aside magic
                 tbsp skillet, bay leaves brown centerpiece. fruit soften edges frond slices onion snack pork steem on wines
                 excess technique cup; Cover smoker soy sauce.
             </p>
 
             <blockquote className="text-3xl font-bold italic text-center my-12 px-4 font-playfair">
-                "One cannot think well, love well, sleep well, if one has not dined well."
+                &quot;One cannot think well, love well, sleep well, if one has not dined well.&quot;
             </blockquote>
-            <p className="text-center text-gray-600 mb-12">— Virginia Woolf, A Room of One's Own</p>
+            <p className="text-center text-gray-600 mb-12">— Virginia Woolf, A Room of One&apos;s Own</p>
 
             <h2 className="text-3xl font-bold mb-4 font-playfair">In the kitchen</h2>
             <p className="mb-8">
@@ -68,11 +75,17 @@ export default function RecipeDetails({ recipe }) {
                 fall-off-the-bone butternut chuck under romas, Skewers on culinary experience.
             </p>
 
-            <Image src="/assets/thumbs/thumb-15.jpg" alt="Cooking in kitchen"
-                className="w-full h-auto mb-8 rounded-lg max-w-xl mx-auto" layout="responsive" width={500} height={0} />
+            <Image 
+                src="/assets/thumbs/thumb-15.jpg" 
+                alt="Cooking in kitchen"
+                className="w-full h-auto mb-8 rounded-lg max-w-xl mx-auto" 
+                layout="responsive" 
+                width={500} 
+                height={0} 
+            />
 
             <p className="mb-8">
-                Juicy meatballs brisket slammin' baked shoulder. Juicy smoker soy sauce burgers brisket. polenta mustard hunk
+                Juicy meatballs brisket slammin&apos; baked shoulder. Juicy smoker soy sauce burgers brisket. polenta mustard hunk
                 greens. Wine technique snack skewers chuck excess. Oil heat slowly. slices natural delicious, set aside magic
                 tbsp skillet, bay leaves brown centerpiece. fruit soften edges frond slices onion snack pork steem on wines
                 excess technique cup; Cover smoker soy sauce.
